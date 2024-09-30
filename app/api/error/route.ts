@@ -1,5 +1,7 @@
+import { NextResponse } from "next/server";
+
 const handler = () => {
-  throw new Error("This is an error");
+  return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
 };
 
 export const GET = handler;
