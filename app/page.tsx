@@ -6,7 +6,7 @@ export default function Home() {
 
   const crashServer = async () => {
     try {
-      await fetch('/api/crash'); // API call to trigger the server crash
+      await fetch('/api/crash');
     } catch (error) {
       console.error('Server crash initiated');
     }
